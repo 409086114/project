@@ -2,8 +2,8 @@ var routeControl = (function(){
 	var hashMap = {//路由关系映射表
 		'city':cityObj,
 		'address':addressObj,
-		/*'list':listObj,
-		'details':detailsObj*/
+		'list':listObj,
+		/*'details':detailsObj*/
 	};
 	var preModule = null;//前一模块
 	var curModule = null;//当前模块
@@ -12,6 +12,22 @@ var routeControl = (function(){
 	function init(name){
 		console.log('我获取了路由的名字',name);
 		var module = hashMap[name] || hashMap['city'];
+
+		var kname = name;
+		if(name.indexOf('address') !== -1) {
+			//路由器携带ID和转义完成的城市名字
+			module = hashMap['address'];	
+			kname = 'address';
+		}
+
+		if(name.indexOf('list') !== -1) {
+			//路由器携带点击对应城市搜索地址编码
+			module = hashMap['list'];	
+			kname = 'list';
+			console.log(kname);
+		}
+		//console.log(hashMap[kname])
+
 		if(module){//路由映射表中有这个方法
 			if(typeof CachePageMap[name] === 'undefined'){
 				//该模块未被实例化，需要进行初始化操作
