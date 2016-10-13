@@ -3,7 +3,7 @@ var routeControl = (function(){
 		'city':cityObj,
 		'address':addressObj,
 		'list':listObj,
-		/*'details':detailsObj*/
+		'details':detailsObj
 	};
 	var preModule = null;//前一模块
 	var curModule = null;//当前模块
@@ -24,6 +24,13 @@ var routeControl = (function(){
 			//路由器携带点击对应城市搜索地址编码
 			module = hashMap['list'];	
 			kname = 'list';
+			module.loadlist(name);
+			console.log(kname);
+		}
+		if(name.indexOf('details') !== -1) {
+			//路由器携带点击对应城市搜索地址编码
+			module = hashMap['details'];	
+			kname = 'details';
 			console.log(kname);
 		}
 		//console.log(hashMap[kname])
@@ -32,7 +39,7 @@ var routeControl = (function(){
 			if(typeof CachePageMap[name] === 'undefined'){
 				//该模块未被实例化，需要进行初始化操作
 				module.init(name);//初始化
-				CachePageMap[name] = module;//进行赋值，已缓存过
+				CachePageMap[name] = true;//进行赋值，已缓存过
 
 				preModule = curModule;
 				curModule = module;

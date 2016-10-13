@@ -5,11 +5,14 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>叫外卖上饿了么</title>
 	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="swiper/css/swiper-3.3.1.min.css"/>
+	<link rel="stylesheet" type="text/css" href="swiper/css/animate.css"/>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/city.css">
 	<link rel="stylesheet" href="css/address.css">
 	<link rel="stylesheet" href="css/list.css">
+	<link rel="stylesheet" href="css/pace.css">
 </head>
 <body>
 	<div class="section" style="display: none;" id="city">
@@ -21,7 +24,7 @@
 				当前定位城市:
 				<span>定位不准时，请在城市列表中选择</span>
 			</h4>
-			<a class="now-city" href="#address-3-%E5%8C%97%E4%BA%AC">
+			<a class="now-city" href="#address-3">
 				<span>北京</span>
 				<i>〉</i>
 			</a>
@@ -39,7 +42,8 @@
 			</ul>
 		</div>
 		<div class="city-wrap">
-			<!-- <div class="current-city">
+			<!-- 
+			<div class="current-city">
 				<h4 class="current">A (按字母排序)</h4> 
 				<ul class="allCity-wrap city-list-wrap">
 					<li class="city-list"><a href="javascript:;">保亭黎族苗族自治县</a></li>
@@ -47,13 +51,13 @@
 			</div> -->
 		</div>
 		<div class="backtop">
-			<i class="iconfont">&#xe637;</i>
+			<i class="iconfont">&#xe601;</i>
 		</div>
 	</div>
 	<div class="section" style="display: none;" id="address">
 		<header class="address-header">
 			<a class="backprev" href="#city">〈</a>
-			<span class="city-name">镇沅彝族哈尼族拉祜族自治县</span>
+			<span class="city-name"></span>
 			<a class="switch" href="#city">切换城市</a>
 		</header>
 		<div class="address-search">
@@ -78,14 +82,89 @@
 	<div class="section" style="display: none;" id="list">
 		<header class="list-header">
 			<a href="#address" class="back-address">
-				<i class="iconfont icon-search"></i>
+				<i class="iconfont">&#x348d;</i>
 			</a>
 			<div class="center">
-				<span>海淀区中关村日月光·鼎好大厦内(善缘街东)</span>
+				<!-- <span>海淀区中关村日月光·鼎好大厦内(善缘街东)</span> -->
 			</div>
 			<a href="javascript:;" class="list-login">登录</a>
 		</header>
-		
+		<div class="swiper-food">
+			<div class="swiper-container" id="slide">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide slide1">
+						<a href="javascript:;" class="food-list">
+							<img src="img/logo.png" alt="">
+							<span>鲜花蛋糕</span>
+						</a>
+					</div>
+					<div class="swiper-slide slide2">slider2</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="business-list">
+			<h3><i class="iconfont">&#xe78e;</i><p>附近商家</p></h3>
+			<!-- 
+			<div class="business-section">
+				<img src="img/1.jpg" alt="" class="business-logo">
+				<div class="information-wrap">
+					<section class="business-title">
+						<h4>
+							<i class="iconfont" id="brand">&#xe62d;</i>
+							<span class="business-name">必胜宅急送（管庄店）</span>
+							<div class="business-ensure">
+								<span id="ensure">保</span>
+								<span id="ticket">票</span>
+							</div>	
+						</h4>
+					</section>
+					<section class="business-title business-evaluate">
+						<div class="star-wrap">
+							<p class="evaluate">
+								<span class="iconfont evaluate-star">&#xe744;</span>
+								<span class="iconfont evaluate-star">&#xe744;</span>
+								<span class="iconfont evaluate-star">&#xe744;</span>
+								<span class="iconfont evaluate-star">&#xe744;</span>
+								<span class="iconfont evaluate-star">&#xe744;</span>
+							</p>
+							<p class="cover">
+								<span class="iconfont evaluate-star">&#xe744;</span>
+								<span class="iconfont evaluate-star">&#xe744;</span>
+								<span class="iconfont evaluate-star">&#xe744;</span>
+								<span class="iconfont evaluate-star">&#xe744;</span>
+								<span class="iconfont evaluate-star">&#xe744;</span>
+							</p>
+						</div>
+						<div class="evaluate-wrap">
+							<span class="evaluate-num">4.5</span>
+							<span class="volume">月售2843单</span>
+						</div>
+						<div class="promise">
+							<span>蜂鸟专送</span>
+							<span>准时达</span>
+						</div>
+					</section>
+					<section class="prompt-title">
+						<div class="money-prompt">
+							<span>¥15起送</span>
+							<span class="cost">订单满20配送费5元，满100免</span>
+						</div>	
+						<div class="time-prompt">
+							<span>2.17km</span>
+							<span class="cost">31分钟</span>
+						</div>
+					</section>
+				</div>
+			</div>style="display: none;"
+			-->
+		</div>
+		<p class="index-loadmore" >
+			<span>正在载入更多商家...</span> 
+		</p>
+		<div class="goback">
+			<i class="iconfont">&#xe681;</i>
+		</div>
 	</div>
 	<div class="section" style="display: none;" id="details">餐厅详情列表页</div>
 	<script>
@@ -102,10 +181,16 @@
 	<script src="plugin/zepto.js"></script>
 	<script src="plugin/director.js"></script>
 	<script src="plugin/fastclick.js"></script>
+	<script src="plugin/swipe.js"></script>
+	<script src="plugin/pace.js"></script>
+	<script src="swiper/js/swiper-3.3.1.jquery.min.js"></script>
+	<script src="swiper/js/swiper.animate1.0.2.min.js"></script>
+
 
 	<script src="module/city.js"></script>
 	<script src="module/address.js"></script>
 	<script src="module/list.js"></script>
+	<script src="module/details.js"></script>
 
 	<script src="route.js"></script>
 	<script src="index.js"></script>

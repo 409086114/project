@@ -1,3 +1,6 @@
+#address{
+	height: auto;
+}
 .address-header{
 	width: 100%;
 	height: 1.877333rem;
@@ -97,8 +100,12 @@
 	font-size: 16px;
 	line-height: 24px;
 	color: #666;
+	float: none;
 }
 .specific-address{
 	font-size: 13px;
 	color: #999;
+	float: none;
 }
+
+

@@ -48,7 +48,7 @@ var cityObj = {
 	loadAllCity:function(){//加载全部城市
 		var keyword = ["A","B","C","D","E","F","G","H","J","K","L","M","N","P","Q","R","S","T","W","X","Y","Z"];
 		var _this = this;
-		var data = store(this.cityName);
+		//var data = store(this.cityName);
 		$.ajax({
 			url:'v1/cities?type=group',
 			type:'GET',
