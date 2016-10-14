@@ -1,0 +1,373 @@
+.datails-header{
+    position: relative;
+    height: 4.5rem;
+    color: #fff;
+    font-size: .293333rem;
+}
+.business-background{
+	height: 12rem;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #3190e8;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.business-main{
+	display: flex;
+	width: 100%;
+    padding-top: 0.853333rem;
+    position: fixed;
+    top: 0;
+}
+.business-img{
+	width: 2.432rem;
+    height: 2.432rem;
+    border: 1px solid #fff;
+    border-radius: .186667rem;
+    margin: 0 0.426667rem 0 0.853333rem;
+}
+.business-information{
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    width: 0;
+    height: 100%;
+    padding-right: 0.426667rem;
+}
+.business-information h2{
+	font-size: 0.768rem;
+    line-height: 0.768rem;
+    font-weight: bolder;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.business-information p{
+    white-space: nowrap;
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+    font-size: 0.512rem;
+    color: white;
+    float: none;
+}
+.business-information p span{
+	float: left;
+}
+.business-information p span:nth-child(2)::before,.business-information p span:nth-child(3)::before{
+	content: '/';
+	color: #ddd;
+}
+.business-activity{
+	position: relative;
+	padding-right: 2.56rem;
+}
+.business-activity li{
+	display: flex;
+    margin-bottom: .2rem;
+    overflow: hidden;
+    font-size: 0.512rem;
+    height: 0.810667rem;
+}
+.business-activity li i{
+	display: inline-block;
+	height: 0.512rem;
+	line-height: 0.426667rem;
+	border-radius: 2px;
+	padding: 2px;
+	background: rgb(240, 115, 115);
+	margin-right: 3px;
+}
+.business-activity li span{
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.activity-information{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 3px;
+	background: rgba(0,0,0,.3);
+	font-size: 0.512rem;
+	height: 0.554667rem;
+	line-height: 0.512rem;
+	border-radius: 0.256rem;
+}
+.activity-information span:nth-child(2){
+	position: relative;
+	left: 4px;
+}
+.activity-word{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 0.853333rem 0 0.426667rem;
+	background: rgba(0,0,0,.3);
+	box-sizing: border-box;
+	width: 100%;
+	height: 1.024rem;
+	line-height: 1.024rem;
+	display: flex;
+}
+.activity-word p{
+    padding: 0 .053333rem;
+    background-color: hsla(0,0%,100%,.8);
+    color: #666;
+    border-radius: .053333rem;
+    margin-right: .133333rem;
+    height: 0.682667rem;
+    line-height: 0.682667rem;
+    margin-top: 0.170667rem;
+    font-size: 0.512rem;
+}
+.activity-word span{
+	display: inline-block;
+	font-size: 0.512rem;
+	line-height: 1.024rem;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+}
+.activity-word b{
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 1.024rem;
+	font-size: 0.512rem;
+}
+.datails-main{
+	position: relative;
+	width: 100%;
+}
+.mian-header{
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	line-height: 1.92rem;
+	border-bottom: 1px solid #ddd;
+	background: white;
+}
+.mian-header a{
+	flex: 1;
+	text-align: center;
+	display: block;
+}
+.mian-header a span{
+	font-size: 0.597333rem;
+	color: #666;
+	position: relative;
+}
+.mian-header .title-active span{
+	color: #3190e8;
+}
+.mian-header .title-active span::after{
+	content: "";
+    position: absolute;
+    bottom: -.16rem;
+    left: -.066667rem;
+    right: -.066667rem;
+    height: .08rem;
+    background-color: #3190e8;
+    border-radius: .04rem;
+}
+.menu-noview{
+	background: #f2f2f2;
+	position: relative;
+	text-align: center;
+	padding: 2.133333rem 0;
+	display: none;
+}
+.menu-noview img{
+	width: 40%;
+}
+.menu-noview p{
+	float: none;
+	font-size: 0.853333rem;
+	color: #333;
+	line-height: 1.28rem;
+}
+.menu-mian{
+	display: flex;
+}
+.menu-view{
+	width: 3.626667rem;
+	height: 22.5rem;
+	min-height:22.186667rem;
+	background: #f8f8f8;
+	position: relative;
+	overflow: hidden;
+}
+.menu-view li{
+	padding: 0.746667rem 0.32rem;
+	border-bottom: 1px solid #ededed;
+	font-size: 0.554667rem;
+	color: #666;
+	position: relative;
+}
+.menu-active{
+	background: white;
+}
+.menu-img{
+    width: 0.512rem;
+    height: 0.597333rem;
+    margin-right: 3px;
+}
+.menu-active::after{
+	content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: .16rem;
+    background-color: #3190e8;
+}
+.menu-list{
+	flex: 1;
+	height: 22.5rem;
+	position: relative;
+	overflow: hidden;
+	background: white;
+}
+.menu-list dt{
+	padding: 0.32rem 0.426667rem;
+	background-color: #f1f1f1;
+	position: relative;
+	font-size: 0.512rem;
+	color: #999;
+}
+.menu-tit{
+	display: flex;
+    align-items: flex-end;
+}
+.menu-tit span:nth-child(2){
+	flex: 1;
+	height: 0.682667rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.food-name{
+	font-size: 0.768rem;
+	font-weight: bolder;
+	color: #666;
+	margin-right: 0.213333rem;
+}
+.menu-list dt i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1.493333rem;
+    z-index: 2;
+    background: #f1f1f1 url(../img/spot.png) center no-repeat;
+    background-size: 50% auto;
+}
+.menu-list dd{
+	padding: 0.64rem 0.426667rem;
+	background-color: white;
+	display: flex;
+	border-bottom: 1px solid #f2f2f2;
+}
+.list-img{
+	flex: 2;
+	margin-right: 0.426667rem;
+}
+.food-img{
+	width: 100%;
+}
+.foodinfo{
+	flex: 8;
+	position: relative;
+	padding-bottom: 1.066667rem;
+}
+.foodinfo header{
+	font-size: 0.768rem;
+	color: #333;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+.foodinfo p{
+	color: #999;
+	font-size: 0.512rem;
+	margin: 0.213333rem 0;
+	line-height: 0.64rem;
+}
+.foodinfo .foodsales{
+	color: #666;
+}
+.foodsales span:nth-child(2){
+	margin-left: 0.341333rem;
+}
+.foodprice{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 0.512rem;
+    color: #f60;
+}
+.foodprice span{
+	font-size: 0.853333rem;
+}
+.cartbutton{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: #666;
+	font-size: 0.768rem;
+}
+.cartbutton .iconfont{
+	display: inline-block;
+	font-size: 1.024rem;
+	color: #007fff;
+}
+.module-car{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding-left: 3.456rem;
+	width: 100%;
+	height: 2.133333rem;
+	box-sizing: border-box;
+	background-color: rgba(33,33,33,.9);
+	line-height: 2.133333rem;
+}
+.buycar{
+	display: block;
+	width: 2.069333rem;
+	height: 2.069333rem;
+	border:0.192rem solid #444;
+	border-radius: 100%;
+	background: rgba(33,33,33,.9) url(../img/buycar.png) no-repeat center center;
+	position: absolute;
+	top: -0.426667rem;
+	left: 0.64rem;
+}
+.buy-num{
+	display: block;
+	border-radius: 50%;
+	position: absolute;
+	top: -1rem;
+	left: 2rem;
+	background-color: #ff461d;
+	color: white;
+	line-height: 0.512rem;
+    height: 0.597333rem;
+    border-radius: 50%;
+    padding: 0.213333rem;
+}
+.submitbtn{
+	width: 4.586667rem;
+	height: 100%;
+	background-color: #4cd964;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 0.768rem;
+}

@@ -8,24 +8,10 @@
 	background: #ffc05b;
 	line-height: 1.877333rem;
 }
-@font-face {font-family: "iconfont";
-  src: url('../iconfont/iconfont.eot?t=1476173210'); /* IE9*/
-  src: url('../iconfont/iconfont.eot?t=1476173210#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../iconfont/iconfont.woff?t=1476173210') format('woff'), /* chrome, firefox */
-  url('../iconfont/iconfont.ttf?t=1476173210') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../iconfont/iconfont.svg?t=1476173210#iconfont') format('svg'); /* iOS 4.1- */
-}
-.back-address .iconfont {
-	font-family:"iconfont" !important;
-	font-size:0.682667rem;
-	font-style:normal;
-	-webkit-font-smoothing: antialiased;
-	-webkit-text-stroke-width: 0.2px;
-	-moz-osx-font-smoothing: grayscale;
+.back-address .iconfont{
+	font-size: 1.024rem;
 	color: white;
-	display: inline-block;
-	float: left;
-    padding-left: 20px;
+	padding-left: 0.426667rem;
 }
 .center{
 	width: 50%;
@@ -96,7 +82,7 @@
 	line-height: 34px;
 	padding-left: 0.64rem;
 }
-.business-list h3 i,p{
+.business-list h3 i,.business-list h3 p{
 	display: block;
 	color: #ccc;
 	font-size: 15px;
@@ -298,4 +284,6 @@
 	width: 100%;
 	text-align: center;
 	line-height: 1.024rem;
+	color: #999;
+	font-size: 1.024rem;
 }

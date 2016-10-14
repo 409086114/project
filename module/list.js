@@ -3,7 +3,7 @@ $.extend(listObj,{
 	name:'我的餐厅列表页',
 	dom:$('#list'),
 	offset:0,
-	init:function(name){
+	init:function(){
 		var _this = this;
 		setTimeout(function(){
 			_this.bindEvend();
@@ -254,18 +254,18 @@ $.extend(listObj,{
 
 			return str = '<div class="star-wrap">'+
 							'<p class="evaluate">'+
-								'<span class="iconfont evaluate-star">&#xe744;</span>'+
-								'<span class="iconfont evaluate-star">&#xe744;</span>'+
-								'<span class="iconfont evaluate-star">&#xe744;</span>'+
-								'<span class="iconfont evaluate-star">&#xe744;</span>'+
-								'<span class="iconfont evaluate-star">&#xe744;</span>'+
+								'<span class="iconfont evaluate-star">&#xe602;</span>'+
+								'<span class="iconfont evaluate-star">&#xe602;</span>'+
+								'<span class="iconfont evaluate-star">&#xe602;</span>'+
+								'<span class="iconfont evaluate-star">&#xe602;</span>'+
+								'<span class="iconfont evaluate-star">&#xe602;</span>'+
 							'</p>'+
 							'<p class="cover" style="width:'+ starWidth +'%;">'+
-								'<span class="iconfont evaluate-star">&#xe744;</span>'+
-								'<span class="iconfont evaluate-star">&#xe744;</span>'+
-								'<span class="iconfont evaluate-star">&#xe744;</span>'+
-								'<span class="iconfont evaluate-star">&#xe744;</span>'+
-								'<span class="iconfont evaluate-star">&#xe744;</span>'+
+								'<span class="iconfont evaluate-star">&#xe602;</span>'+
+								'<span class="iconfont evaluate-star">&#xe602;</span>'+
+								'<span class="iconfont evaluate-star">&#xe602;</span>'+
+								'<span class="iconfont evaluate-star">&#xe602;</span>'+
+								'<span class="iconfont evaluate-star">&#xe602;</span>'+
 							'</p>'+
 						'</div>';
 		}

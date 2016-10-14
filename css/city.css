@@ -102,25 +102,13 @@
 	border-right: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 }
-@font-face {font-family: 'iconfont';
-    src: url('../iconfont/iconfont.eot'); /* IE9*/
-    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
-    url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
-}
 .backtop{
 	position: fixed;
 	right: 0.5rem;
 	bottom: 1rem;
 }
-.iconfont{
-    font-family:"iconfont" !important;
-    font-size:30px;
-    font-style:normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;
-    color: darksalmon;;
-    display: none;
+.backtop .iconfont{
+	font-size: 1.706667rem;
+	color: #ff7f00;
+	display: none;
 }

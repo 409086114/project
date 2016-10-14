@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="css/address.css">
 	<link rel="stylesheet" href="css/list.css">
 	<link rel="stylesheet" href="css/pace.css">
+	<link rel="stylesheet" href="css/details.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
 </head>
 <body>
 	<div class="section" style="display: none;" id="city">
@@ -105,7 +107,6 @@
 		</div>
 		<div class="business-list">
 			<h3><i class="iconfont">&#xe78e;</i><p>附近商家</p></h3>
-			<!-- 
 			<div class="business-section">
 				<img src="img/1.jpg" alt="" class="business-logo">
 				<div class="information-wrap">
@@ -122,18 +123,18 @@
 					<section class="business-title business-evaluate">
 						<div class="star-wrap">
 							<p class="evaluate">
-								<span class="iconfont evaluate-star">&#xe744;</span>
-								<span class="iconfont evaluate-star">&#xe744;</span>
-								<span class="iconfont evaluate-star">&#xe744;</span>
-								<span class="iconfont evaluate-star">&#xe744;</span>
-								<span class="iconfont evaluate-star">&#xe744;</span>
+								<span class="iconfont evaluate-star">&#xe602;</span>
+								<span class="iconfont evaluate-star">&#xe602;</span>
+								<span class="iconfont evaluate-star">&#xe602;</span>
+								<span class="iconfont evaluate-star">&#xe602;</span>
+								<span class="iconfont evaluate-star">&#xe602;</span>
 							</p>
 							<p class="cover">
-								<span class="iconfont evaluate-star">&#xe744;</span>
-								<span class="iconfont evaluate-star">&#xe744;</span>
-								<span class="iconfont evaluate-star">&#xe744;</span>
-								<span class="iconfont evaluate-star">&#xe744;</span>
-								<span class="iconfont evaluate-star">&#xe744;</span>
+								<span class="iconfont evaluate-star">&#xe602;</span>
+								<span class="iconfont evaluate-star">&#xe602;</span>
+								<span class="iconfont evaluate-star">&#xe602;</span>
+								<span class="iconfont evaluate-star">&#xe602;</span>
+								<span class="iconfont evaluate-star">&#xe602;</span>
 							</p>
 						</div>
 						<div class="evaluate-wrap">
@@ -157,7 +158,6 @@
 					</section>
 				</div>
 			</div>style="display: none;"
-			-->
 		</div>
 		<p class="index-loadmore" >
 			<span>正在载入更多商家...</span> 
@@ -166,7 +166,109 @@
 			<i class="iconfont">&#xe681;</i>
 		</div>
 	</div>
-	<div class="section" style="display: none;" id="details">餐厅详情列表页</div>
+	<div class="section" style="display: none;" id="details">
+		<header class="datails-header">
+			<!-- <div class="business-background">
+				<div class="business-main">
+					<img src="https://fuss10.elemecdn.com/8/ed/8bd6e72a80513723ec25450338a73jpeg.jpeg?imageMogr/quality/80/format/webp/" alt="" class="business-img">
+					<div class="business-information">
+						<h2>肥瘦老饭盒（印刷厂店)</h2>
+						<p>
+							<span>商家配送</span>
+							<span>27分钟送达</span>
+							<span>配送费2元</span>
+						</p>
+						<div class="business-activity">
+							<ul>
+								<li>
+									<i>减</i>
+									<span>在线支付满100减15</span>
+								</li>
+								<li>
+									<i>新</i>
+									<span>(不与其他活动同享)新用户下单立减3.0元</span>
+								</li>
+							</ul>
+							<div class="activity-information">
+								<span>2个活动</span>
+								<span>〉</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="activity-word">
+				<p>公告</p>
+				<span>最近饿了么系统有时候不提示有单 若没接单麻烦打下电话谢谢 </span>
+				<b>〉</b>
+			</div> -->
+		</header>
+		<div class="datails-main">
+			<header class="mian-header">
+				<a href="javascript:;" class="title-active"><span>商品</span></a>
+				<a href="javascript:;"><span>商家</span></a>
+			</header>
+			<div class="foods-list">
+				<div class="menu-noview">
+					<img src="//github.elemecdn.com/eleme/fe-static/1cb05f59/media/empty/no-food.png">
+					<p>没有商品</p>
+					<p>该商家还未上传商品</p>
+				</div>
+				<div class="menu-mian">
+					<div class="menu-view">
+						<ul>
+							<!-- <li class="menu-active"><span>果汁</span></li>
+							<li><img class="menu-img" src="//fuss10.elemecdn.com/5/da/3872d782f707b4c82ce4607c73d1ajpeg.jpeg"><span>果汁</span></li>
+							<li><span>果汁</span></li>
+							<li><span>果汁</span></li>
+							<li><span>果汁</span></li>
+							<li><span>果汁</span></li>
+							<li><span>果汁</span></li> -->
+						</ul>
+					</div>
+					<div class="menu-list">
+						<div class="scroll-wrap">
+							<dl>
+								<!-- <dt>
+									<p class="menu-tit">
+										<span class="food-name">果汁</span>
+										<span>大家喜欢吃，才叫真好吃。</span>
+										<i></i>
+									</p>
+								</dt>
+								<dd>
+									<div class="list-img">
+										<img src="img/gz.jpeg" alt="" class="food-img">
+									</div>
+									<div class="foodinfo">
+										<header>老北京鸡肉卷</header>
+										<p>选用无骨鸡腿柳条、搭配传统甜面酱和新鲜爽脆黄瓜，酱香浓郁的老北京味。</p>
+										<p class="foodsales">
+											<span>月售94份</span>
+											<span>好评率90%</span>
+										</p>
+										<strong class="foodprice">
+											¥<span>15</span>
+										</strong>
+										<div class="cartbutton">
+											<a href="javascript:" class="minus iconfont">&#xe600;</a> 
+											<span class="entityquantity">1</span>
+											<a href="javascript:" class="plus iconfont">&#xe655;</a> 
+										</div>
+									</div>
+								</dd> -->
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="module-car">
+			<span class="buycar"></span>
+			<span class="buy-num">0</span>
+			<a href="javascript:;" class="submitbtn">去结算</a>
+		</div>
+	</div>
 	<script>
 		function store(nameSpace,data){
 			if(data){
@@ -181,10 +283,9 @@
 	<script src="plugin/zepto.js"></script>
 	<script src="plugin/director.js"></script>
 	<script src="plugin/fastclick.js"></script>
-	<script src="plugin/swipe.js"></script>
+	<script src="plugin/iscroll.js"></script>
 	<script src="plugin/pace.js"></script>
 	<script src="swiper/js/swiper-3.3.1.jquery.min.js"></script>
-	<script src="swiper/js/swiper.animate1.0.2.min.js"></script>
 
 
 	<script src="module/city.js"></script>

@@ -31,6 +31,7 @@ var routeControl = (function(){
 			//路由器携带点击对应城市搜索地址编码
 			module = hashMap['details'];	
 			kname = 'details';
+			module.loadlist(name);
 			console.log(kname);
 		}
 		//console.log(hashMap[kname])
