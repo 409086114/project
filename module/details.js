@@ -10,9 +10,16 @@ $.extend(detailsObj,{
 		this.addressID = name.split('-')[1];//截取获得hash值
 		this.geohash = name.split('-')[2];//截取获得店铺IDhash值
 		this.loadInformation();
-		//this.loadMenu();
+		$('.scroll-wrap dl').html(' ');
+		this.loadMenu();
 	},
 	bindEvent:function(){
+		if(typeof myScrollFood !== 'undefined') {
+			myScrollFood.destroy(); //删掉
+		}
+		if(typeof myScroll !== 'undefined') {
+			myScrollFood.destroy(); //删掉
+		}
 		window.myScrollFood = new IScroll('.menu-list', {
 		    scrollbars: true,
 		    bounce: true,
@@ -22,7 +29,7 @@ $.extend(detailsObj,{
 			shrinkScrollbars: 'scale',
 			fadeScrollbars: true
 		});
-		window.myScrollFood = new IScroll('.menu-view', {
+		window.myScroll = new IScroll('.menu-view', {
 			    scrollbars: true,
 			    bounce: true,
 			    preventDefault: false, //让点击事件得以执行
@@ -41,7 +48,6 @@ $.extend(detailsObj,{
 			url:'/shopping/restaurant/'+ this.geohash +'?extras[]=activities&extras[]=album&extras[]=license&extras[]=identification&extras[]=statistics&latitude='+ this.latitude +'&longitude='+ this.longitude,
 			type:'GET',
 			success:function(res){
-				_this.loadMenu();
 				_this.renderInformation(res);
 			}
 		})
@@ -183,9 +189,9 @@ $.extend(detailsObj,{
 		$('.scroll-wrap dl').append(html);
 	},
 	renderImg:function(){
-		var str = '';	
+		var str = '';
+		
 		if(this.foodsSrc === null){
-			//console.log(this.foodsSrc);
 			return '';
 		}
 		var src = this.foodsSrc;//图片转换
